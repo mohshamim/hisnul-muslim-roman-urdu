@@ -1,6 +1,7 @@
 # 🚀 Vercel Deployment Guide
 
 ## Prerequisites
+
 - GitHub account
 - Vercel account (free tier available)
 - MongoDB Atlas account
@@ -8,6 +9,7 @@
 ## Step 1: Push to GitHub
 
 1. **Initialize Git Repository**
+
    ```bash
    git init
    git add .
@@ -15,6 +17,7 @@
    ```
 
 2. **Create GitHub Repository**
+
    - Go to [GitHub](https://github.com)
    - Click "New repository"
    - Name it: `hisnul-muslim-admin`
@@ -31,14 +34,17 @@
 ## Step 2: Deploy on Vercel
 
 1. **Go to [Vercel](https://vercel.com)**
+
    - Sign in with GitHub
    - Click "New Project"
 
 2. **Import Repository**
+
    - Select your `hisnul-muslim-admin` repository
    - Vercel will auto-detect Next.js
 
 3. **Configure Project**
+
    - **Project Name**: `hisnul-muslim-admin` (or your preferred name)
    - **Framework Preset**: Next.js (auto-detected)
    - **Root Directory**: `./` (leave as default)
@@ -48,6 +54,7 @@
 
 4. **Environment Variables**
    Add these environment variables:
+
    ```
    MONGODB_URI=mongodb+srv://shmm333:jtIZJ5X43373Xz4z@cluster0.qkfnsgt.mongodb.net/hisnul-muslim-admin?retryWrites=true&w=majority
    NEXTAUTH_SECRET=your-secret-key-here
@@ -61,11 +68,13 @@
 ## Step 3: Post-Deployment
 
 1. **Test Your Admin Panel**
+
    - Visit your Vercel URL
    - Test adding categories and duas
    - Check MongoDB connection
 
 2. **Custom Domain (Optional)**
+
    - Go to Project Settings → Domains
    - Add your custom domain
 
@@ -76,16 +85,19 @@
 ## Troubleshooting
 
 ### Build Errors
+
 - Check Vercel build logs
 - Ensure all dependencies are in `package.json`
 - Verify TypeScript compilation
 
 ### MongoDB Connection Issues
+
 - Check environment variables in Vercel
 - Verify MongoDB Atlas IP whitelist
 - Test connection locally first
 
 ### Runtime Errors
+
 - Check Vercel function logs
 - Verify API routes are working
 - Check browser console for errors
@@ -104,6 +116,7 @@
 ## Next Steps
 
 After successful deployment:
+
 1. Test all functionality
 2. Set up monitoring
 3. Configure custom domain
